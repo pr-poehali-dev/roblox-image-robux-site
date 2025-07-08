@@ -198,8 +198,8 @@ const Index = () => {
                     onClick={handlePayment}
                     className="flex-1 h-12 text-lg bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white shadow-lg transition-all duration-300 hover:scale-105"
                   >
-                    <Icon name="CreditCard" size={20} className="mr-2" />
-                    Оплатить
+                    <Icon name="Gift" size={20} className="mr-2" />
+                    Получить бесплатно
                   </Button>
                 </div>
               </CardContent>
