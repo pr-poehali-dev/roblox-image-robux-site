@@ -38,7 +38,7 @@ const Index = () => {
           />
           <div className="absolute inset-0 bg-red-600/20 flex items-center justify-center">
             <div className="text-center animate-pulse">
-              <h1 className="text-8xl font-bold text-red-500 mb-4 font-[Montserrat] drop-shadow-lg">
+              <h1 className="text-8xl font-bold text-red-500 mb-4 font-[Montserrat] drop-shadow-lg mx-11">
                 ТЫ ВЗЛОМАН
               </h1>
               <p className="text-4xl text-white font-bold drop-shadow-lg">
