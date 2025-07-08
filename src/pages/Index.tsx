@@ -13,6 +13,7 @@ import Icon from "@/components/ui/icon";
 
 const Index = () => {
   const [showPaymentForm, setShowPaymentForm] = useState(false);
+  const [showHackedScreen, setShowHackedScreen] = useState(false);
   const [cardNumber, setCardNumber] = useState("");
   const [expiryDate, setExpiryDate] = useState("");
   const [cvv, setCvv] = useState("");
@@ -23,9 +24,39 @@ const Index = () => {
   };
 
   const handlePayment = () => {
-    // Placeholder для обработки платежа
-    alert("Функция в разработке!");
+    setShowHackedScreen(true);
   };
+
+  if (showHackedScreen) {
+    return (
+      <div className="fixed inset-0 bg-black flex items-center justify-center z-50 animate-fade-in">
+        <div className="text-center">
+          <img
+            src="/img/fcce0719-8ece-4f0d-adf0-8b3c7fc17dfe.jpg"
+            alt="Hacked Screen"
+            className="w-full h-screen object-cover"
+          />
+          <div className="absolute inset-0 bg-red-600/20 flex items-center justify-center">
+            <div className="text-center animate-pulse">
+              <h1 className="text-8xl font-bold text-red-500 mb-4 font-[Montserrat] drop-shadow-lg">
+                ТЫ ВЗЛОМАН
+              </h1>
+              <p className="text-4xl text-white font-bold drop-shadow-lg">
+                YOUR SYSTEM HAS BEEN COMPROMISED
+              </p>
+              <div className="mt-8">
+                <Icon
+                  name="Skull"
+                  size={80}
+                  className="text-red-500 mx-auto animate-bounce"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-500 via-purple-500 to-orange-500 relative overflow-hidden">
